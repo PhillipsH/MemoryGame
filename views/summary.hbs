@@ -1,0 +1,18 @@
+<div id='summary-page'>
+    <h1>Game Over</h1>
+    <h1>{{score}}</h1>
+    <div id='form-score'>
+        <form action="/leaderboard" method="POST" role="form">
+            <label for="Uname">username:</label><br>
+            <input type="text" id="username" name="username" placeholder="Enter Username"><br>
+            <input type="submit" value="Submit" class='button'>
+        </form> 
+    </div>
+    <div id='restart-box'>
+        <form id='restart-form' action="/" method="GET" role="form">
+            <input id='restart' type="submit" value="restart" name="restart" class='button'>
+        </form>
+
+    </div>
+</div>
+

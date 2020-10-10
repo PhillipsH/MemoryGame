@@ -1,0 +1,17 @@
+<div id='game-page'>
+    <h1>Memory Game</h1>
+    <div>
+        <h2>score: <span id='score'>0</span></h2>
+    </div>
+    <div id='game-board'>
+    </div>
+    <div id="game-terminate">
+        <form action="/summary" method="POST">
+            <input type="hidden" id="score-input" name="score" class="form-control" value="0">
+            <input name='submit-button' type="submit" value="Submit Score" class='button'>
+        </form>
+    </div>
+    <footer class='footer'>
+        By Phillips Halim
+    </footer>
+</div>

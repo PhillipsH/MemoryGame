@@ -1,0 +1,33 @@
+<h2>Thanks for playing {{username}}</h2>
+<h2>Score: {{score}}</h2>
+
+<div id="leaderboard">
+    <h1>Leaderboard</h1>
+    <p></p>
+    <table id="leaderboard-table">
+        <tr>
+            <th><h3>name</h3></th>
+            <th><h3>score</h3></th>
+            <th><h3>place</h3></th>
+        </tr>
+        {{#each list}}
+        <tr>
+            <td>
+                <h3>{{this.username}}</h3>
+            </td>
+            <td>
+                <h3>{{this.score}}</h3>
+            </td>
+            <td>
+                <h3>{{this.rank}}</h3>
+            </td>
+        </tr>
+        {{/each}}
+    </table>
+</div>
+
+<div id='restart-box'>
+    <form id='restart-form' action="/" method="GET" role="form">
+        <input id='restart' type="submit" value="restart" name="restart" class='button'>
+    </form>
+</div>
